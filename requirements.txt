@@ -1,4 +1,4 @@
-
+protobuf==3.20
 typing_extensions
 bentoml
 dagshub
