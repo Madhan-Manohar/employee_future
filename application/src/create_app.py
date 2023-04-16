@@ -20,7 +20,7 @@ def get_inputs():
         help="payment tier: 1: highest 2: mid level 3:lowest",
     )
     data["Age"] = st.number_input(
-        "Current Age", min_value=21, step=1, value=20
+        "Current Age", min_value=20, step=1, value=20
     )
     data["Gender"] = st.selectbox("Gender", options=["Male", "Female"])
     data["EverBenched"] = st.selectbox(
