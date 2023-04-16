@@ -12,7 +12,7 @@ def get_inputs():
 
     data["City"] = st.selectbox(
         "City Office Where Posted",
-        options=["Bangalore", "Pune", "New Delhi"],
+        options=["Chennai", "Bangalore", "Hyderabad"],
     )
     data["PaymentTier"] = st.selectbox(
         "Payment Tier",
@@ -20,7 +20,7 @@ def get_inputs():
         help="payment tier: 1: highest 2: mid level 3:lowest",
     )
     data["Age"] = st.number_input(
-        "Current Age", min_value=15, step=1, value=20
+        "Current Age", min_value=21, step=1, value=20
     )
     data["Gender"] = st.selectbox("Gender", options=["Male", "Female"])
     data["EverBenched"] = st.selectbox(
@@ -42,7 +42,7 @@ def write_predictions(data: dict):
             data=data_json,
         ).text[0]
 
-        if prediction == "0":
+        if prediction == "1":
             st.write("This employee is predicted stay more than two years.")
         else:
             st.write("This employee is predicted to leave in two years.")
