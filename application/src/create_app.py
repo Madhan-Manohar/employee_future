@@ -27,7 +27,7 @@ def get_inputs():
     data["Age"] = st.number_input(
         "Current Age", min_value=20, step=1, value=20
     )
-     data["JoiningYear"] = st.number_input(
+    data["JoiningYear"] = st.number_input(
          "Year of Join", min_value=2012, step=1, value=2012,
          max_value=2018
     )
