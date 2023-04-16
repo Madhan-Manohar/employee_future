@@ -1,4 +1,4 @@
-pip upgrade
+
 typing_extensions==4.4.0
 bentoml==1.0.0a4
 dagshub==0.1.8
