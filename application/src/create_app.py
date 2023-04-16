@@ -53,9 +53,9 @@ def write_predictions(data: dict):
         ).text[0]
 
         if prediction == "1":
-            st.write("This employee is predicted stay more than two years.")
+            st.write("This employee is predicted to leave within two years.")
         else:
-            st.write("This employee is predicted to leave in two years.")
+            st.write("This employee is predicted stay more than two years.")
 
 
 def main():
